@@ -54,7 +54,7 @@ const DashboardLayout = ({ children, title }) => {
 
                 <hr />
 
-                <ul className="nav nav-pills flex-column mb-auto">
+                <ul className="nav nav-pills flex-column mb-4 mb-md-auto">
                     {role === 'admin' && (
                         <li className="nav-item">
                             <Link to="/admin" className="nav-link text-white" onClick={closeSidebarPoints}>
