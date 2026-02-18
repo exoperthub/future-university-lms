@@ -1,6 +1,8 @@
 import React from 'react';
 import { useAuth } from '../context/AuthProvider';
 import { useNavigate, Link } from 'react-router-dom';
+import logo from "../assets/images/logo.png";
+
 
 const DashboardLayout = ({ children, title }) => {
     const { user, role, signOut } = useAuth();
@@ -17,10 +19,11 @@ const DashboardLayout = ({ children, title }) => {
             <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{ width: '280px' }}>
                 <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <img
-                        src="/src/assets/images/logo.png"
-                        alt="Logo"
-                        style={{ width: '40px', height: '40px', marginRight: '10px', backgroundColor: 'white', borderRadius: '50%', padding: '2px' }}
-                    />
+  src={logo}
+  alt="Logo"
+  style={{ width: "40px", height: "40px", borderRadius: "50%" }}
+/>
+
                     <span className="fs-5 fw-bold">Future University LMS</span>
                 </Link>
                 <hr />
